@@ -79,4 +79,6 @@ Number of seconds to trigger the alarm:
 
 [Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
 
-[Nano V3 Microcontroller](https://robotdyn.com/nano-v3-ch340)
+[Nano V3 Pinouts](https://robotdyn.com/nano-v3-ch340)
+
+![alt text](images/fridge_alarm_build.jpg)
