@@ -4,12 +4,14 @@ A refrigerator alarm that illuminates a red LED and activates a piezo buzzer if 
 
 ## Overview
 
-Much to my chagrin, I would often leave my refrigerator door slightly ajar without realizing it. This lets the cool air out, which eventually makes the food bad and the household sad. Unfortunately, my fridge did not already come with an alarm feature. 
+Much to my chagrin, I would often leave my refrigerator door slightly ajar without realizing it. This lets the cool air out, eventually making the food bad and the household sad. Quite the bummer that the fridge I own did not come with an alarm feature out of the box.
 
-I needed a simple solution. This was it. Use a microcontroller to detect the door is open when the connection of a magnetic proximity contact switch is broken.
+So, I wanted a simple solution using existing parts I already had on hand. This was it. Use a microcontroller to detect that the door is open when the connection of a magnetic proximity contact switch is broken.
 
 If the refrigerator door is open, a RED led light turns on. If the door is closed, the RED light turns off. An alarm will beep if the door is still open after a set number of seconds has passed. Nothing fancy.
 
+This ain't pretty, but it works 🔥
+![alt text](images/fridge_alarm_hw.gif)
 
 ## Hardware
 
@@ -22,7 +24,7 @@ If the refrigerator door is open, a RED led light turns on. If the door is close
 | [Magnetic proximity/reed switch](https://www.sparkfun.com/magnetic-door-switch-set.html)
 | [Solder-able Breadboard - Mini](https://www.sparkfun.com/sparkfun-solder-able-breadboard-mini.html)
 | Jumper wires
-| 
+| 5V power supply
 
 
 ## Software
@@ -67,9 +69,13 @@ Number of seconds to trigger the alarm:
 
 4. Select the appropriate serial port.
 
-5. Compile the sketch.
+5. Compile the [sketch](../fridge_alarm.ino).
 
 6. Upload the sketch to the Arduino.
 
 ---
 
+## Reference
+
+[Arduino](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
+[Nano V3](https://robotdyn.com/nano-v3-ch340)
