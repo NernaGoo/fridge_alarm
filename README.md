@@ -77,5 +77,6 @@ Number of seconds to trigger the alarm:
 
 ## Reference
 
-[Arduino](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
-[Nano V3](https://robotdyn.com/nano-v3-ch340)
+[Arduino IDE](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
+
+[Nano V3 Microcontroller](https://robotdyn.com/nano-v3-ch340)
