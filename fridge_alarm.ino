@@ -18,7 +18,7 @@
 
 int count = 0;  // counter
 int numberOfSecs = 120; // number of seconds to trigger the alarm sound
-int triggerValue = numberOfSecs * ((1 / DELAY) * 1000); // using DELAY value, convert the number of seconds to a trigger value used in loop
+long triggerValue = (numberOfSecs * 1000L) / DELAY; // using DELAY value, convert the number of seconds to a trigger value used in loop
 /*
   With a DELAY of 200 milliseconds in each loop, looping 5 times is about 1000 ms, or 1 second --> (1 / DELAY * 1000 = 5)
   For numberOfSecs of 120s (2 mins), the trigger value is 600 (or 600 loop counts before alarm sounds)
@@ -28,12 +28,11 @@ int triggerValue = numberOfSecs * ((1 / DELAY) * 1000); // using DELAY value, co
 
 void setup()
 {
-    
-    // start the serial connection
+    // Start the serial connection
     Serial.begin(115200);
     Serial.println("Fridge Door Alarm");
     
-    // initialize pins
+    // Initialize pins
     pinMode(LED_PIN, OUTPUT);
     pinMode(SWITCH_PIN, INPUT_PULLUP);
     pinMode(BUZZ_PIN, OUTPUT);
@@ -55,7 +54,6 @@ void siren()
 
 void loop()
 {
-   
    int state = digitalRead(SWITCH_PIN);
    if (state)   // Evaluates as TRUE if SWITCH_PIN state is 1 (HIGH)
    {
