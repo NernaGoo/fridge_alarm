@@ -65,13 +65,17 @@ Number of seconds to trigger the alarm:
 
 3. Select:
 
-   **Tools → Board → Arduino Uno**
+   **Tools → Board → Arduino Nano**
 
-4. Select the appropriate serial port.
+4. Select
+   
+   **Tools → Processor → ATmega328P**
 
-5. Compile the [sketch](../fridge_alarm.ino).
+5. Select the appropriate serial port.
 
-6. Upload the sketch to the Arduino.
+6. Compile the [sketch](../fridge_alarm.ino).
+
+7. Upload the sketch to the Arduino.
 
 ---
 
