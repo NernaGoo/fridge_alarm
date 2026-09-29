@@ -73,7 +73,7 @@ Number of seconds to trigger the alarm:
 
 5. Select the appropriate serial port.
 
-6. Compile the [sketch](../fridge_alarm.ino).
+6. Compile the [sketch](./fridge_alarm.ino).
 
 7. Upload the sketch to the Arduino.
 
